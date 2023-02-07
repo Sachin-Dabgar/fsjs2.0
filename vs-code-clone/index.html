@@ -48,10 +48,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="space-y-1.5 lg:hidden">
+                <!-- <div class="space-y-1.5 lg:hidden">
                     <div class="w-7 h-0.5 bg-white"></div>
                     <div class="w-7 h-0.5 bg-white"></div>
                     <div class="w-7 h-0.5 bg-white"></div>
+                </div> -->
+                <div class="lg:hidden">
+                    <i class="fa-solid fa-bars text-white text-2xl"></i>
                 </div>
             </div>
         </nav>
@@ -246,7 +249,7 @@
 
         <section class="bg-[#F5F5F5] py-10">
             <div class="upper-heading flex justify-center">
-                <h1 class="font-thin text-xl">VS Code for</h1>
+                <h1 class="font-thin text-3xl">VS Code for</h1>
             </div>
             <div class="languages-div grid grid-cols-2 w-3/4 m-auto mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                 <div class="javascript flex mt-5">
@@ -302,11 +305,168 @@
                 <p class="text-[#007ABC] text-lg hover:underline hover:cursor-pointer">and many more languages on the Marketplace...</p>
             </div>
             <div class="button-bottom text-center mt-8">
-                <button class="text-white py-4 px-8 bg-[#0071bc] hover:bg-[#0066b8]">GET STARTED NOW</button>
+                <button class="text-white font-semibold py-4 px-8 bg-[#0071bc] hover:bg-[#0066b8]">GET STARTED NOW</button>
             </div>
         </section>
 
         <!-- vs code for design start end -->
+
+        <!-- download section design start -->
+
+        <section class="py-10">
+            <div class="grid grid-cols-1 m-auto lg:grid-cols-3 xl:w-3/4">
+                <!-- windows -->
+                <div class="flex flex-col items-center mt-12 w-64 m-auto">
+                    <img class="h-[100px] w-[100px]" src="./assets/windows-logo.png" alt="">
+                    <button class="mt-3 font-bold text-lg w-full text-white py-2 px-4 bg-[#0071bc] hover:bg-[#0066b8]"><i class="fa fa-download mr-4"></i>Windows<p class="font-semibold text-sm">Windows 8,10,11</p></button>
+                    <div class="mt-1 flex items-center gap-3">
+                        <div class="mt-1 text-center">
+                            <p class="font-medium text-lg">User Installer</p>
+                            <p class="font-medium text-lg">System Installer</p>
+                            <p class="font-medium text-lg">.zip</p>
+                            <p class="font-medium text-lg">CLI</p>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x86</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x86</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x86</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x86</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- linux -->
+                <div class="flex flex-col items-center mt-12 w-64 m-auto">
+                    <img class="h-[100px] w-[100px]" src="./assets/linux-logo.png" alt="">
+                    <div class="flex gap-1">
+                        <button class="mt-3 font-bold text-lg w-2/4 text-white py-2 px-4 bg-[#0071bc] hover:bg-[#0066b8]"><i class="fa fa-download mr-4"></i>.deb<p class="font-semibold text-xs">Debian, Ubuntu</p></button>
+                        <button class="mt-3 font-bold text-lg w-2/4 text-white py-2 px-4 bg-[#0071bc] hover:bg-[#0066b8]"><i class="fa fa-download mr-4"></i>.rpm<p class="font-semibold text-sm">Red Hat, fedora, SUSE</p></button>
+                    </div>
+                    <div class="mt-1 flex items-center gap-3">
+                        <div class="mt-1 text-center">
+                            <p class="font-medium text-lg">.deb</p>
+                            <p class="font-medium text-lg">.rpm</p>
+                            <p class="font-medium text-lg">.tar.gz</p>
+                            <p class="font-medium text-lg">Snap</p>
+                            <p class="font-medium text-lg">CLI</p>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm32</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm32</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm32</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Snap Store</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">x64</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm32</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Arm64</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- apple -->
+                <div class="flex flex-col items-center mt-12 w-64 m-auto">
+                    <img class="h-[100px] w-[100px]" src="./assets/apple-logo.svg" alt="">
+                    <button class="mt-3 font-bold text-lg w-full text-white py-2 px-4 bg-[#0071bc] hover:bg-[#0066b8]"><i class="fa fa-download mr-4"></i>Mac<p class="font-semibold text-sm">macOS 10.22+</p></button>
+                    <div class="mt-1 flex items-center gap-3">
+                        <div class="mt-1 text-center">
+                            <p class="font-medium text-lg">.zip</p>
+                            <p class="font-medium text-lg">CLI</p>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Intel chip</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Apple silicon</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Universal</span>
+                            </div>
+                            <div>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Intel chip</span>
+                                <span class="bg-[#0071bc] text-sm rounded p-0.5 text-white">Apple silicon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- download section design start end -->
+
+        <!-- want new features section desing start -->
+
+        <section class="bg-[#F5F5F5] py-10">
+            <div class="grid grid-cols-1 m-auto w-3/4 lg:grid-cols-2">
+                <div class="flex flex-col w-3/4 text-center m-auto lg:mt-0">
+                    <div>
+                        <h1 class="font-semibold text-xl">Want new features sooner?</h1>
+                    </div>
+                    <div class="mt-2">
+                        <p class="leading-8">Get the <span class="text-[#0071bc]">Insiders build</span> instead.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col w-3/4 text-center m-auto mt-24 lg:mt-0">
+                    <div>
+                        <h1 class="font-semibold text-xl">Use <span class="text-[#0071bc]">vscode.dev</span> for quick edits online!</h1>
+                    </div>
+                    <div class="mt-2">
+                        <p class="leading-8">GitHub, Azure Repos, and local files.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col w-3/4 text-center m-auto mt-24 lg:col-span-2">
+                    <div>
+                        <h1 class="font-semibold text-sm">LICENSE AND PRIVACY TERMS</h1>
+                    </div>
+                    <div class="mt-2">
+                        <p class="leading-8">
+                            By downloading and using Visual Studio Code, you agree to the <span class="text-[#0071bc]">license terms</span> and <span class="text-[#0071bc]">privacy statement</span>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <span class="text-[#0071bc]">How to Disable Crash Reporting</span> to learn how to disable it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- want new features section desing start end -->
+
+        <!-- footer desing start -->
+
+        <footer class="bg-[#333333] py-10">
+            <div class="w-3/4 m-auto">
+                <div class="text-white text-center flex flex-col  lg:flex-row lg:justify-between">
+                    <p class="mt-2">Hello from Sachin.</p>
+                    <p class="mt-2">Follow me on <a class="bg-slate-50 cursor-pointer text-black rounded p-0.5" href="https://www.linkedin.com/in/sachin-dabgar-08b356179/"><i class="fa fa-brands fa-linkedin"></i> Linkedin</a></p>
+                    <p class="mt-2">Visit my <a class="bg-slate-50 cursor-pointer text-black rounded p-0.5" href="https://github.com/Bosscoder1325/fsjs2.0/tree/main/vs-code-clone"><i class="fa-brands fa-github"></i> GitHub</a> profile for code.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer desing end -->
 
     </main>
 </body>
