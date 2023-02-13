@@ -4,117 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit Card | Landing Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Credit-Card Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-serif w-screen overflow-y-auto overflow-x-hidden">
-
-    <!-- navbar design start -->
-    <nav class="bg-[#151515] py-5 z-10 relative">
-        <div class="relative w-[77%] m-auto text-white flex justify-between items-center">
-            <div class="logo-div">
-                <img class="cursor-pointer" src="./Assets/Icons/Logo.svg" alt="" width="100px">
+<body class="bg-[#151515]">
+    <!-- navbar -->
+    <nav>
+        <!-- nav container -->
+        <div class="flex justify-between p-[1rem] items-center md:w-[90%] md:m-auto">
+            <!-- logo image -->
+            <div>
+                <img src="./Assets/Icons/Logo.svg" alt="" width="70%">
             </div>
-            <div class="menu-div hidden lg:block">
-                <ul class="flex gap-16">
-                    <li class="cursor-pointer">Home</li>
-                    <li class="cursor-pointer">Features</li>
-                    <li class="cursor-pointer">Pricing</li>
-                    <li class="cursor-pointer">About us</li>
+            <!-- navigation list -->
+            <div class="hidden lg:block text-white">
+                <ul class="lg:flex lg:gap-9">
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>About US</li>
                 </ul>
             </div>
-            <div class="lang-contact-div  gap-14 hidden lg:flex">
-                <button>Eng<i class="fa fa-solid fa-caret-down ml-2"></i></button>
-                <img class="absolute right-14 cursor-pointer" src="./Assets/Icons/btn-pink-bg.svg" alt="">
-                <p class="cursor-pointer">Contact Us</p>
+            <!-- buttons right -->
+            <div class="hidden lg:flex lg:text-white lg:gap-3 lg:relative lg:items-center">
+                <button>Eng</button>
+                <i class="fa-solid fa-sort-down"></i>
+                <button class="ml-[2rem]">Contact US</button>
+                <img src="./Assets/Icons/btn-pink-bg.svg" alt="" class="lg:absolute lg:right-[4rem]">
             </div>
-            <div class="lg:hidden">
-                <i class="fa-solid fa-bars text-[2rem]"></i>
+            <!-- bars hamburger icon -->
+            <div class="text-white text-[1.5rem] lg:hidden">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
+    <!-- navbar -->
 
-    <!-- navbar design start end -->
+    <!-- hero section -->
 
-    <!-- hero section design start -->
-    
-    <section class="bg-[#151515] pt-[3rem] pb-[7rem] w-screen overflow-hidden">
-        <div class="text-white  w-5/6 m-auto">
-            <div class="pl-8 pt-8">
-                <h1 class="text-white text-[3rem] lg:text-[6rem]">Simply All Transactions <br> in <span class="text-[#F637EC]">One Card</span></h1>
-                <p class="mt-10 text-[#A5A5A5] text-[1rem] lg:text-[1.5rem]">Hurry up and join now, with this you can manage your <br> daiy finances easily and safely.</p>
-                <div class="relative flex gap-2 mt-[6rem] ml-11">
-                    <img class="absolute -left-11" width="70px" src="./Assets/Icons/btn-pink-bg.svg" alt="">
-                    <p class="text-[1.5rem] cursor-pointer">GET STARTED</p>
-                    <img class="cursor-pointer" src="./Assets/Icons/RightArrow.svg" alt="">
+    <section class="px-[1.5em] py-[3em]">
+        <!-- hero container -->
+        <div>
+            <div class="flex flex-col text-white">
+                <h1 class="text-[1.6rem]">Simplify All Transactions <br> in <span class="text-[#F637EC]">One Card</span></h1>
+                <p class="mt-[1.5em] text-[#7E7E7E]">Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+                <div class="flex mt-[2em] items-center relative">
+                    <button class="ml-[1.8em]">GET STARTED</button>
+                    <img class="ml-[0.7em]" src="./Assets/Icons/RightArrow.svg" alt="">
+                    <img class="absolute" src="./Assets/Icons/btn-pink-bg.svg" alt="">
                 </div>
-                <div class="relative mt-[5rem] flex gap-8">
-                    <div class="number-div flex items-center gap-3">
-                        <p class="text-[1.5rem] lg:text-[3rem]">42K<i class="fa fa-solid fa-plus text-[2rem] text-[#F637EC]"></i></p>
-                        <p class="text-[1rem] lg:text-[1.3rem]">Happy <br> Active User</p>
+                <div class="flex mt-[2em] gap-4">
+                    <div class="flex items-center">
+                        <div class="flex items-center">
+                            <p class="text-[1.5rem]">42K</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <p class="text-[0.8rem] ml-[0.8em]">Happy <br> Active User</p>
+                        </div>
                     </div>
-                    <img src="./Assets/Icons/Vector 402.svg" alt="">
-                    <div class="number-div flex items-center gap-3">
-                        <p class="text-[1.5rem] lg:text-[3rem]">12K<i class="fa fa-solid fa-plus text-[2rem] text-[#F637EC]"></i></p>
-                        <p class="text-[1rem] lg:text-[1.3rem]">Years <br> Experience</p>
+                    <div>
+                        <img src="./Assets/Icons/Vector 402.svg" alt="">
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center">
+                            <p class="text-[1.5rem]">42K</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div>
+                            <p class="text-[0.8rem] ml-[0.8em]">Happy <br> Active User</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <img src="./Assets/Photos/frontCards.png"  alt="front card image" class="absolute -right-60 top-24 z-50 hidden xl:block">
-            <img  src="./Assets/Photos/backCards.png"  alt="back card image" class="absolute right-0 top-7 hidden xl:block">
         </div>
     </section>
 
-    <!-- hero section design start end -->
-
-    <!-- logo banner design start -->
-
-
-    <section class="py-[3rem] bg-[#292929] md:py-[6rem]">
-        <div class="grid grid-cols-1 w-9/12 m-auto justify-items-center gap-9 md:grid-cols-5">
-            <div class="logo-div">
-                <img class="cursor-pointer" src="./Assets/Icons/Logo.svg" alt="">
-            </div>
-            <div class="logo-div">
-                <img class="cursor-pointer" src="./Assets/Icons/Logo.svg" alt="">
-            </div>
-            <div class="logo-div">
-                <img class="cursor-pointer" src="./Assets/Icons/Logo.svg" alt="">
-            </div>
-            <div class="logo-div">
-                <img class="cursor-pointer" src="./Assets/Icons/Logo.svg" alt="">
-            </div>
-            <div class="logo-div">
-                <img class="cursor-pointer" src="./Assets/Icons/Logo.svg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- logo banner design start end -->
-
-    <!-- some details section design start -->
-
-    <section class="bg-[#151515] py-[5rem]">
-        <div class="grid grid-cols-1 lg:flex lg:justify-between justify-items-center w-[70%] m-auto">
-            <div>
-                <h1 class="text-[2.5rem] lg:text-[3rem] text-white">The best payment <br> service for <span class=" text-[#F637EC]"> your <br> transactions.</span></h1>
-            </div>
-            <div>
-                <p class="text-[1rem] mt-[2rem] lg:text-[1.5rem] text-[#939393]">The following are the services we provide <br> to user, with the services we maximize <br> it is hoped that users aer satisfied with <br> what we provide.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- some details section design start end -->
-
-    <!-- boxes section design start -->
-
-    <!-- <section>
-        
-    </section> -->
-
-    <!-- boxes section design start end -->
+    <!-- hero section -->
 
 </body>
 </html>
