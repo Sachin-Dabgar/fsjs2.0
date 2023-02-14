@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#151515]">
+<body class="bg-[#151515] w-screen overflow-x-hidden">
     <!-- navbar -->
     <nav>
         <!-- nav container -->
@@ -40,15 +40,15 @@
         </div>
     </nav>
     <!-- navbar -->
-
+    
     <!-- hero section -->
 
     <section class="px-[1.5em] py-[3em]">
         <!-- hero container -->
         <div>
-            <div class="flex flex-col text-white">
-                <h1 class="text-[1.6rem]">Simplify All Transactions <br> in <span class="text-[#F637EC]">One Card</span></h1>
-                <p class="mt-[1.5em] text-[#7E7E7E]">Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+            <div class="flex flex-col text-white md:w-[70%] md:ml-[2.3em]">
+                <h1 class="text-[1.6rem] md:text-[2.6rem]">Simplify All Transactions <br> in <span class="text-[#F637EC]">One Card</span></h1>
+                <p class="mt-[1.5em] text-[#7E7E7E] md:text-[1.2rem] md:w-[60%]">Hurry up and join now, with this you can manage your daily <br> finances easily and safely.</p>
                 <div class="flex mt-[2em] items-center relative">
                     <button class="ml-[1.8em]">GET STARTED</button>
                     <img class="ml-[0.7em]" src="./Assets/Icons/RightArrow.svg" alt="">
@@ -78,10 +78,13 @@
                     </div>
                 </div>
             </div>
+            <img class="hidden md:block md:absolute md:w-[550px] md:top-[1em] md:-right-[8.3em]" src="./Assets/Photos/frontCards.png" alt="">
+            <!-- <img class="hidden md:block md:absolute md:w-[70%] md:top-[0em] md:-right-[2em]" src="./Assets/Photos/backCards.png" alt="">  -->
         </div>
     </section>
 
     <!-- hero section -->
+
 
 </body>
 </html>
