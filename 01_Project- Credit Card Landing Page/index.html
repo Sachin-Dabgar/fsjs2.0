@@ -8,82 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#151515] w-screen overflow-x-hidden">
-    <!-- navbar -->
-    <nav>
-        <!-- nav container -->
-        <div class="flex justify-between p-[1rem] items-center md:w-[90%] md:m-auto">
-            <!-- logo image -->
-            <div>
-                <img src="./Assets/Icons/Logo.svg" alt="" width="70%">
+<body class="bg-[#151515] w-[100vw] overflow-x-hidden">
+    <main class="2xl:w-[50%] 2xl:m-auto 2xl:overflow-x-hidden">
+        <!-- navbar -->
+        <nav>
+            <!-- nav container -->
+            <div class="flex justify-between p-[1rem] items-center md:w-[90%] md:m-auto">
+                <!-- logo image -->
+                <div>
+                    <img src="./Assets/Icons/Logo.svg" alt="" width="70%">
+                </div>
+                <!-- navigation list -->
+                <div class="hidden lg:block text-white">
+                    <ul class="lg:flex lg:gap-9">
+                        <li>Home</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>About US</li>
+                    </ul>
+                </div>
+                <!-- buttons right -->
+                <div class="hidden lg:flex lg:text-white lg:gap-3 lg:relative lg:items-center">
+                    <button>Eng</button>
+                    <i class="fa-solid fa-sort-down"></i>
+                    <button class="ml-[2rem]">Contact US</button>
+                    <img src="./Assets/Icons/btn-pink-bg.svg" alt="" class="lg:absolute lg:right-[4rem]">
+                </div>
+                <!-- bars hamburger icon -->
+                <div class="text-white text-[1.5rem] lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-            <!-- navigation list -->
-            <div class="hidden lg:block text-white">
-                <ul class="lg:flex lg:gap-9">
-                    <li>Home</li>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>About US</li>
-                </ul>
-            </div>
-            <!-- buttons right -->
-            <div class="hidden lg:flex lg:text-white lg:gap-3 lg:relative lg:items-center">
-                <button>Eng</button>
-                <i class="fa-solid fa-sort-down"></i>
-                <button class="ml-[2rem]">Contact US</button>
-                <img src="./Assets/Icons/btn-pink-bg.svg" alt="" class="lg:absolute lg:right-[4rem]">
-            </div>
-            <!-- bars hamburger icon -->
-            <div class="text-white text-[1.5rem] lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-    <!-- navbar -->
+        </nav>
+        <!-- navbar -->
+        
+        <!-- hero section -->
     
-    <!-- hero section -->
-
-    <section class="px-[1.5em] py-[3em]">
-        <!-- hero container -->
-        <div>
-            <div class="flex flex-col text-white md:w-[70%] md:ml-[2.3em]">
-                <h1 class="text-[1.6rem] md:text-[2.6rem]">Simplify All Transactions <br> in <span class="text-[#F637EC]">One Card</span></h1>
-                <p class="mt-[1.5em] text-[#7E7E7E] md:text-[1.2rem] md:w-[60%]">Hurry up and join now, with this you can manage your daily <br> finances easily and safely.</p>
-                <div class="flex mt-[2em] items-center relative">
-                    <button class="ml-[1.8em]">GET STARTED</button>
-                    <img class="ml-[0.7em]" src="./Assets/Icons/RightArrow.svg" alt="">
-                    <img class="absolute" src="./Assets/Icons/btn-pink-bg.svg" alt="">
-                </div>
-                <div class="flex mt-[2em] gap-4">
-                    <div class="flex items-center">
-                        <div class="flex items-center">
-                            <p class="text-[1.5rem]">42K</p>
-                            <i class="fa-solid fa-plus"></i>
+        <section class="px-[1.5em] py-[3em] relative">
+            <!-- hero container -->
+            <div>
+                <div class="flex flex-col text-white md:w-[70%] lg:w-[80%] md:ml-[2.3em]">
+                    <h1 class="text-[1.6rem] md:text-[2.6rem] lg:text-[4.3rem]">Simplify All Transactions <br> in <span class="text-[#F637EC]">One Card</span></h1>
+                    <p class="mt-[1.5em] text-[#7E7E7E] md:text-[1.2rem] md:w-[60%]">Hurry up and join now, with this you can manage your daily <br> finances easily and safely.</p>
+                    <div class="flex mt-[2em] lg:mt-[5em] items-center relative">
+                        <button class="ml-[1.8em]">GET STARTED</button>
+                        <img class="ml-[0.7em]" src="./Assets/Icons/RightArrow.svg" alt="">
+                        <img class="absolute" src="./Assets/Icons/btn-pink-bg.svg" alt="">
+                    </div>
+                    <div class="flex mt-[2em] gap-4">
+                        <div class="flex items-center text-[1.5rem] lg:text-[2rem]">
+                            <div class="flex items-center">
+                                <p>42K</p>
+                                <i class="fa-solid fa-plus text-[#F637EC]"></i>
+                            </div>
+                            <div>
+                                <p class="text-[0.8rem] lg:text-[1rem] ml-[0.8em]">Happy <br> Active User</p>
+                            </div>
                         </div>
                         <div>
-                            <p class="text-[0.8rem] ml-[0.8em]">Happy <br> Active User</p>
+                            <img src="./Assets/Icons/Vector 402.svg" alt="">
                         </div>
-                    </div>
-                    <div>
-                        <img src="./Assets/Icons/Vector 402.svg" alt="">
-                    </div>
-                    <div class="flex items-center">
-                        <div class="flex items-center">
-                            <p class="text-[1.5rem]">42K</p>
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        <div>
-                            <p class="text-[0.8rem] ml-[0.8em]">Happy <br> Active User</p>
+                        <div class="flex items-center text-[1.5rem] lg:text-[2rem]">
+                            <div class="flex items-center">
+                                <p>42K</p>
+                                <i class="fa-solid fa-plus text-[#F637EC]"></i>
+                            </div>
+                            <div>
+                                <p class="text-[0.8rem] lg:text-[1rem] ml-[0.8em]">Happy <br> Active User</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <img class="hidden md:block md:absolute md:w-[600px] lg:w-[800px] md:top-[0em] md:right-[-14em]" src="./Assets/Photos/frontCards.png" alt="">
+                <img class="hidden md:block md:absolute md:w-[600px] lg:w-[800px] md:top-[0em] md:-right-[2em]" src="./Assets/Photos/backCards.png" alt=""> 
             </div>
-            <img class="hidden md:block md:absolute md:w-[550px] md:top-[1em] md:-right-[8.3em]" src="./Assets/Photos/frontCards.png" alt="">
-            <!-- <img class="hidden md:block md:absolute md:w-[70%] md:top-[0em] md:-right-[2em]" src="./Assets/Photos/backCards.png" alt="">  -->
-        </div>
-    </section>
-
-    <!-- hero section -->
+        </section>
+    
+        <!-- hero section -->
+    </main>
 
 
 </body>
