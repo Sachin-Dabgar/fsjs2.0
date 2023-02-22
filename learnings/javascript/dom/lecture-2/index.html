@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document, window, id, class, tagname, queryselector -->
+    <!-- alert, confirm, prompt, innerHTML, inner Text -->
+
+    <h1>Hello javascript bootcamp</h1>
+    <ul></ul>
+
+    <button onclick="maths()" id="fsjs2">submit</button>
+    <p id="js"></p>
+
+    <script>
+        const list = `
+            <li>Rohit</li>
+            <li>Manas</li>
+            <li>Binod</li>
+        `
+        const ul = document.querySelector("ul")
+        ul.innerHTML = list
+        // create element on the screen
+        let title = document.createElement('h1')
+        title.className = 'title'
+        title.style.fontSize = '25px'
+        title.style.color = 'green'
+        title.textContent = 'Creating new element in dom'
+        document.body.appendChild(title)
+        // remove child assignment
+        document.body.removeChild(title)
+
+        // for loop
+        for(let i = 0; i<3; i++){
+            let para = document.createElement('p')
+            para.className = 'details'
+            para.style.backgroundColor = 'pink'
+            para.textContent = 'hello fsjs'
+            document.body.appendChild(para)
+        }
+
+        function maths(){
+            let value = prompt("solve this 50-30")
+            if(value == 20){
+                document.querySelector('#js').textContent = 'Success Redirected'
+                document.querySelector('#fsjs2').style.backgroundColor = 'green'
+                document.querySelector('#fsjs2').style.color = 'white' 
+            }
+            else{
+                document.querySelector('#js').textContent = 'Oops!! Not Redirected'
+                document.querySelector('#fsjs2').style.backgroundColor = 'red'
+                document.querySelector('#fsjs2').style.color = 'white' 
+            }
+        }
+
+    </script>
+
+</body>
+</html>
